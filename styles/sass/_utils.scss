@@ -1,10 +1,15 @@
     // setting the scss variables
-    // $primaryColor: ;
-    // $secondaryColor: ;
-    // $accentColor: ;
+    // #EBA6A9
+    // colors...
+    $primaryColor: #FDECEF;
+    $secondaryColor: #500808;
+    $firstAccentColor:#930606;
+    $secondAccentColor: #17292f;;
+    $resultColor: #472317;
     
+    // Fonts....
     $fontDefault:'Alex Brush', cursive;
-    $secondaryFont: 'Open Sans', sans-serif;
+    $secondaryFont: 'Raleway', sans-serif;
 
     @mixin fontDef($family: $fontDefault,
     $sizeValue: 2rem, 

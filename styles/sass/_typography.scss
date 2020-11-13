@@ -1,13 +1,85 @@
 // HEADING styles........
 h1{
-    @include fontDef($fontDefault, 11rem);
-    color: wheat;
+    @include fontDef($fontDefault, 9rem, 400, 8.4rem, 1.6px);
+    color: $primaryColor;
+}
+h2{
+    @include fontDef($fontDefault, 6.4rem, 400, 8.4rem, 1.6px);
+    color: $primaryColor;
+    text-align: center;
+}
+
+h3{
+    @include fontDef($fontDefault, 4.8rem, 400, 6.4rem, 1.1px);
+    color: $resultColor;
 }
 
 // BODY text styles....
+p,
+footer,
+li{
+    @include fontDef($secondaryFont, 2rem ,400 ,3.2rem ,1.1px);
+    color: $primaryColor;
+    text-align: center;
+    a{
+        text-decoration: none;
+        color: $primaryColor;
+    }
+}
 
-// FORM styles.....
+.infoSection p{
+    font-size: 2.5rem; 
+}
+
+ul{
+    padding: 50px;
+    li{
+        text-align: left;
+    }
+}
+
+
+// FORM Typography styles.....
+input,
+.submit,
+.userNameInput,
+.memberNameInput{
+    @include fontDef($secondaryFont, 2rem ,400 ,3.2rem ,1.1px);
+    color: $secondaryColor;
+}
+
+input[type="submit"],
+.submit{
+    color: $primaryColor;
+    background-color: $firstAccentColor;
+}
 
 // BUTTON styles...
+// Styling the submit/OK buttons.....
+input[type="submit"],
+button.submit{
+    background-color: $firstAccentColor;
+    border: 2px solid $primaryColor;
+    border-radius: 2px;
+    padding: 5px;
+}
 
-// FOOTER styles....
+button.submit{
+    padding: 5px 30px;
+}
+
+// HOVER styles.........
+footer a:hover,
+a:focus,
+a:active{
+    border-bottom: 2px solid $primaryColor;
+}
+
+.submit:hover,
+.submit:focus,
+.submit:active{
+    font-weight: bold;
+    color: $firstAccentColor;
+    background-color: $primaryColor;
+    border: 2px solid $firstAccentColor;
+}

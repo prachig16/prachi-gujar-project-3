@@ -202,15 +202,6 @@ template {
   display: none;
 }
 
-.clearfix:after {
-  visibility: hidden;
-  display: block;
-  font-size: 0;
-  content: '';
-  clear: both;
-  height: 0;
-}
-
 html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -221,7 +212,7 @@ html {
           box-sizing: inherit;
 }
 
-.sr-only {
+.srOnly {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -258,16 +249,111 @@ img {
 
 h1 {
   font-family: "Alex Brush", cursive;
-  font-size: 11rem;
+  font-size: 9rem;
+  font-weight: 400;
+  line-height: 8.4rem;
+  letter-spacing: 1.6px;
+  color: #FDECEF;
+}
+
+h2 {
+  font-family: "Alex Brush", cursive;
+  font-size: 6.4rem;
+  font-weight: 400;
+  line-height: 8.4rem;
+  letter-spacing: 1.6px;
+  color: #FDECEF;
+  text-align: center;
+}
+
+h3 {
+  font-family: "Alex Brush", cursive;
+  font-size: 4.8rem;
   font-weight: 400;
   line-height: 6.4rem;
   letter-spacing: 1.1px;
-  color: wheat;
+  color: #472317;
+}
+
+p,
+footer,
+li {
+  font-family: "Raleway", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 3.2rem;
+  letter-spacing: 1.1px;
+  color: #FDECEF;
+  text-align: center;
+}
+
+p a,
+footer a,
+li a {
+  text-decoration: none;
+  color: #FDECEF;
+}
+
+.infoSection p {
+  font-size: 2.5rem;
+}
+
+ul {
+  padding: 50px;
+}
+
+ul li {
+  text-align: left;
+}
+
+input,
+.submit,
+.userNameInput,
+.memberNameInput {
+  font-family: "Raleway", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 3.2rem;
+  letter-spacing: 1.1px;
+  color: #500808;
+}
+
+input[type="submit"],
+.submit {
+  color: #FDECEF;
+  background-color: #930606;
+}
+
+input[type="submit"],
+button.submit {
+  background-color: #930606;
+  border: 2px solid #FDECEF;
+  border-radius: 2px;
+  padding: 5px;
+}
+
+button.submit {
+  padding: 5px 30px;
+}
+
+footer a:hover,
+a:focus,
+a:active {
+  border-bottom: 2px solid #FDECEF;
+}
+
+.submit:hover,
+.submit:focus,
+.submit:active {
+  font-weight: bold;
+  color: #930606;
+  background-color: #FDECEF;
+  border: 2px solid #930606;
 }
 
 header {
-  background-image: url("../assets/szaboViktorHeader.jpg");
-  min-height: 50vh;
+  background-image: url("../assets/toniCuencaFormSection.jpg");
+  min-height: 70vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -280,8 +366,106 @@ header h1 {
   text-align: center;
   position: absolute;
   top: 50%;
+  left: 25%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding: 0;
+  margin: 0;
+  width: 50%;
+}
+
+.flexContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin-bottom: 50px;
+}
+
+.flexContainer .sectionForUser,
+.flexContainer .sectionForMember {
+  margin: 0 20px;
+  width: calc(50% - 40px);
+}
+
+input[type="text"] {
+  background-color: #FDECEF;
+  border: 2px solid #FDECEF;
+  border-radius: 2px;
+  padding: 5px 10px;
+  margin-right: 15px;
+  width: calc(75% - 15px);
+}
+
+input[type="submit"] {
+  width: calc(25% - 13px);
+}
+
+.userNameInput,
+.memberNameInput {
+  min-height: 300px;
+  background-color: #FDECEF;
+  opacity: 0.8;
+  border: 2px solid #FDECEF;
+  margin: 20px 0;
+}
+
+main {
+  background-color: #FDECEF;
+}
+
+main .formSection {
+  background-image: url("../assets/joannaKosinskaMain.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 20px 0;
+  border: #FDECEF 40px double;
+  position: relative;
+}
+
+main .formSection .infoSection {
+  width: 75%;
+  margin: 0 auto;
+}
+
+main .formSection button {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+main .resultSection {
+  background-image: url("../assets/jeshootsResult.jpg");
+  min-height: 700px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+main .resultSection h3 {
+  text-align: center;
+  position: absolute;
+  top: 45%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   padding: 0;
+  width: 35%;
+}
+
+footer {
+  background-color: #930606;
+  opacity: 0.9;
+  border-top: #FDECEF 20px double;
+  padding: 10px;
+}
+
+footer p,
+footer a {
+  border-bottom: 2px solid transparent;
 }

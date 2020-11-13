@@ -1,1 +1,11 @@
 // FOOTER style...
+footer{
+    background-color: $firstAccentColor;
+    opacity: 0.9;
+    border-top: $primaryColor 20px double;
+    padding: 10px;
+    p,
+    a{
+        border-bottom: 2px solid transparent;
+    }
+}

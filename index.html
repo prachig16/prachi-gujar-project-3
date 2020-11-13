@@ -6,42 +6,66 @@
     <title>Secret Santa Selector</title>
     <!-- Linking the Font family, Awesome font library and style sheet -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Open+Sans&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Raleway:wght@100&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/ace8ce037f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
     <header>
-        <h1 class="wrapper">Secret Santa Selector</h1>
+        <div class="wrapper">
+            <h1>Secret Santa Selector</h1>
+        </div>
     </header>
 
     <main>
-        <div class="wrapper">
-            <h2>About the Secret Santa</h2>
-            <p>Do not let the lockdown keep you away from the joy of Christams!Let us help you to find your secret santa match
-                without having to leave your home.</p>
-            <ul>
-                <li>Type your name in the first section below and click "Ok".</li>
-                <li>Type names of all your friends and click "Ok".</li>
-                <li>Once you submit both fields, click on "Submit" and let us do the rest!</li>
-            </ul>
-            <div class="flexContainer">
-                <div class="formUser">
-                    <form action="">
-                        <!-- input will be recorded from the user -->
-                    </form>
+        <section class="formSection">
+            <div class="wrapper">
+                <div class="infoSection">
+                    <h2>About the Secret Santa</h2>
+                    <p>Do not let the lockdown keep you from the joy of Christams! Let us help you to find your secret santa match without having to leave your home.</p>
+                    <ul>
+                        <li>Type your name in the first section below and click "Ok"!</li>
+                        <li>Type names of all your friends and click "Ok"!</li>
+                        <li>Once you submit both fields, click on "Submit" and let us do the rest!</li>
+                    </ul>
                 </div>
-                <div class="formMember">
-                    <form action="">
-                        <!-- input will be recorded from the user -->
-                    </form>
+                
+                <div class="flexContainer">
+                    <div class="sectionForUser">
+                        <form action="#" class="userForm">
+                            <label for="name" class="srOnly">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your Name">
+                        
+                            <input type="submit" class="submit" value="Ok">
+                        </form>
+                        <section class="userNameInput">
+
+                        </section>
+                    </div>
+                    <div class="sectionForMember">
+                        <form action="#" class="userForm">
+                            <label for="name" class="srOnly">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="Friend's Name">
+                        
+                            <input type="submit" class="submit" value="Ok">
+                        </form>
+                        <section class="memberNameInput">
+                        
+                        </section>
+                    </div>
                 </div>
+
+                <button type="button" class="submit">SUBMIT</button>
             </div>
-        </div>
-        <div class="resultSection">
+        </section>
+        
+        <section class="resultSection">
             <!-- This will be populated using JQuer -->
-            <h3 class="wrapper">your secret santa match is xxxxxx</h3>
-        </div>
+            <div class="wrapper resultContainer">
+                <!-- <h3>`${userName}, your secret santa match is ${seclectedMember}`</h3> -->
+            </div>
+        </section>
     </main>
     <footer>
         <p class="wrapper"> Copyright <i class="far fa-copyright"></i> 2019 HackerYou | <a href="https://junocollege.com/">Created at Juno College of Technology</a>
