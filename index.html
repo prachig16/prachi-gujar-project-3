@@ -5,11 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Secret Santa Selector</title>
     <!-- Linking the Font family, Awesome font library and style sheet -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Open+Sans&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/ace8ce037f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-    
+    <header>
+        <h1 class="wrapper">Secret Santa Selector</h1>
+    </header>
+
+    <main>
+        <div class="wrapper">
+            <h2>About the Secret Santa</h2>
+            <p>Do not let the lockdown keep you away from the joy of Christams!Let us help you to find your secret santa match
+                without having to leave your home.</p>
+            <ul>
+                <li>Type your name in the first section below and click "Ok".</li>
+                <li>Type names of all your friends and click "Ok".</li>
+                <li>Once you submit both fields, click on "Submit" and let us do the rest!</li>
+            </ul>
+            <div class="flexContainer">
+                <div class="formUser">
+                    <form action="">
+                        <!-- input will be recorded from the user -->
+                    </form>
+                </div>
+                <div class="formMember">
+                    <form action="">
+                        <!-- input will be recorded from the user -->
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="resultSection">
+            <!-- This will be populated using JQuer -->
+            <h3 class="wrapper">your secret santa match is xxxxxx</h3>
+        </div>
+    </main>
+    <footer>
+        <p class="wrapper"> Copyright <i class="far fa-copyright"></i> 2019 HackerYou | <a href="https://junocollege.com/">Created at Juno College of Technology</a>
+        </p>
+    </footer>
+
     <!--Loading jQuery library and linking the script file  -->
     <script src='https://code.jquery.com/jquery-3.4.0.min.js' integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=' crossorigin='anonymous'></script>
     <script src="./script.js"></script>    
