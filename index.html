@@ -6,8 +6,7 @@
     <title>Secret Santa Selector</title>
     <!-- Linking the Font family, Awesome font library and style sheet -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Open+Sans&display=swap" rel="stylesheet"> -->
-    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Raleway:wght@400;500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/ace8ce037f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styles/style.css">
 </head>
@@ -23,10 +22,10 @@
             <div class="wrapper">
                 <div class="infoSection">
                     <h2>About the Secret Santa</h2>
-                    <p>Do not let the lockdown keep you from the joy of Christams! Let us help you to find your secret santa match without having to leave your home.</p>
+                    <p>Do not let the lockdown keep you from the joy of Christams! Let us help you to find your secret santa match without you having to leave the warmth of your home <i class="fas fa-snowflake"></i></p>
                     <ul>
                         <li>Type your name in the first section below and click "Ok"!</li>
-                        <li>Type names of all your friends and click "Ok"!</li>
+                        <li>Type names of all your friends in the next section and click "Ok"!</li>
                         <li>Once you submit both fields, click on "Submit" and let us do the rest!</li>
                     </ul>
                 </div>
@@ -40,7 +39,12 @@
                             <input type="submit" class="submit" value="Ok">
                         </form>
                         <section class="userNameInput">
-
+                            <!-- user Name will appear here after the input -->
+                            <!-- <ul>
+                                <li>Prahci</li>
+                                <li>Arjun</li>
+                                <li>Sayali</li>
+                            </ul> -->
                         </section>
                     </div>
                     <div class="sectionForMember">
@@ -51,18 +55,23 @@
                             <input type="submit" class="submit" value="Ok">
                         </form>
                         <section class="memberNameInput">
-                        
+                            <!-- Members' names will appear here after the input -->
+                            <!-- <ul>
+                                <li>Prahci</li>
+                                <li>Arjun</li>
+                                <li>Sayali</li>
+                                <li>Prahci</li>
+                            </ul> -->
                         </section>
                     </div>
                 </div>
-
                 <button type="button" class="submit">SUBMIT</button>
             </div>
         </section>
         
         <section class="resultSection">
-            <!-- This will be populated using JQuer -->
             <div class="wrapper resultContainer">
+                <!-- String will appear as a method from JS, string will look like below -->
                 <!-- <h3>`${userName}, your secret santa match is ${seclectedMember}`</h3> -->
             </div>
         </section>

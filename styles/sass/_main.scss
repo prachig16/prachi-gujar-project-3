@@ -3,8 +3,12 @@
 // FORMsection....
 main{
     background-color: $primaryColor;
+
+    // styling the Form section inluding the info above form and the form.........
+    // styling related to "FORM" are in "_form.scss"
     .formSection{
         background-image: url('../assets/joannaKosinskaMain.jpg');
+        // Image credits: unsplash: Joanna Kosinska
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -24,8 +28,10 @@ main{
         }
     }
 
+    // Styling Result section.......
     .resultSection{
         background-image: url('../assets/jeshootsResult.jpg');
+        // Image credits: unsplash: Jetshoots.com
         min-height: 700px;
         background-repeat: no-repeat;
         background-size: cover;

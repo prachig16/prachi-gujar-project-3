@@ -1,11 +1,14 @@
+// HEADER styles.........
+
 header{
-    background-image: url('../assets/toniCuencaFormSection.jpg');
-    min-height: 70vh;
+    background-image: url('../assets/toniCuencaHeader.jpg');
+    // Image credits: unsplash: Toni Cuenca
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     position: relative;
+    min-height: 70vh;
     padding: 20px 0;
     h1{
         text-align: center;

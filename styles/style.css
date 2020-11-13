@@ -306,6 +306,17 @@ ul li {
   text-align: left;
 }
 
+.flexContainer li {
+  font-family: "Raleway", sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 3.2rem;
+  letter-spacing: 1.1px;
+  color: #500808;
+  text-align: left;
+  list-style: none;
+}
+
 input,
 .submit,
 .userNameInput,
@@ -318,14 +329,8 @@ input,
   color: #500808;
 }
 
-input[type="submit"],
 .submit {
   color: #FDECEF;
-  background-color: #930606;
-}
-
-input[type="submit"],
-button.submit {
   background-color: #930606;
   border: 2px solid #FDECEF;
   border-radius: 2px;
@@ -352,13 +357,13 @@ a:active {
 }
 
 header {
-  background-image: url("../assets/toniCuencaFormSection.jpg");
-  min-height: 70vh;
+  background-image: url("../assets/toniCuencaHeader.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   position: relative;
+  min-height: 70vh;
   padding: 20px 0;
 }
 

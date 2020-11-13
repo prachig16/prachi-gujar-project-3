@@ -9,6 +9,7 @@ h2{
     text-align: center;
 }
 
+// this will be applied to the string showing the result
 h3{
     @include fontDef($fontDefault, 4.8rem, 400, 6.4rem, 1.1px);
     color: $resultColor;
@@ -38,6 +39,13 @@ ul{
     }
 }
 
+// For the userInput to display in the list
+.flexContainer li{
+    @include fontDef($secondaryFont, 2rem ,500 ,3.2rem ,1.1px);
+    color: $secondaryColor;
+    text-align: left;
+    list-style: none;
+}
 
 // FORM Typography styles.....
 input,
@@ -48,16 +56,10 @@ input,
     color: $secondaryColor;
 }
 
-input[type="submit"],
-.submit{
-    color: $primaryColor;
-    background-color: $firstAccentColor;
-}
-
 // BUTTON styles...
 // Styling the submit/OK buttons.....
-input[type="submit"],
-button.submit{
+.submit{
+    color: $primaryColor;
     background-color: $firstAccentColor;
     border: 2px solid $primaryColor;
     border-radius: 2px;
