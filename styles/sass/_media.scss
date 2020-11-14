@@ -11,6 +11,10 @@
     }
 
     // INFO section under main.....
+    main .formSection .infoSection{
+        width: 100%;
+    }
+
     .infoSection {
         h2{
             font-size: 4rem;
@@ -22,7 +26,7 @@
             padding: 50px 5px;
             li{
                 font-size: 1.8rem;
-                text-align: center;
+                padding-left: 30px;
             }
         }
     }
@@ -30,15 +34,15 @@
     // Other sections in MAIN.....
     main{
         .sectionForUser{
-            width: 80%;
+            width: 100%;
         }
         .resultSection{
             min-height: 500px;
-            h3{
-                font-size: 4rem;
-                width: 45%;
-            }
         }
     }
 
+    main .resultSection h3{
+        font-size: 3.5rem;
+        width: 45%;
+    }
 }

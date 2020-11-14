@@ -290,6 +290,7 @@ li {
   letter-spacing: 1.1px;
   color: #FDECEF;
   text-align: center;
+  list-style: none;
 }
 
 p a,
@@ -620,6 +621,9 @@ footer a {
     font-size: 5rem;
     padding-left: 50px;
   }
+  main .formSection .infoSection {
+    width: 100%;
+  }
   .infoSection h2 {
     font-size: 4rem;
   }
@@ -631,16 +635,16 @@ footer a {
   }
   .infoSection ul li {
     font-size: 1.8rem;
-    text-align: center;
+    padding-left: 30px;
   }
   main .sectionForUser {
-    width: 80%;
+    width: 100%;
   }
   main .resultSection {
     min-height: 500px;
   }
   main .resultSection h3 {
-    font-size: 4rem;
+    font-size: 3.5rem;
     width: 45%;
   }
 }
