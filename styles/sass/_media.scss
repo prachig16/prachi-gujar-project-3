@@ -1,0 +1,44 @@
+// Media Queries......
+@media (max-width: 768px){
+    
+    // HEADER......
+    header{
+        background-attachment: scroll;
+        h1{
+            font-size: 5rem;
+            padding-left: 50px;
+        }
+    }
+
+    // INFO section under main.....
+    .infoSection {
+        h2{
+            font-size: 4rem;
+        }
+        p{
+            font-size: 1.8rem;
+        }
+        ul{
+            padding: 50px 5px;
+            li{
+                font-size: 1.8rem;
+                text-align: center;
+            }
+        }
+    }
+
+    // Other sections in MAIN.....
+    main{
+        .sectionForUser{
+            width: 80%;
+        }
+        .resultSection{
+            min-height: 500px;
+            h3{
+                font-size: 4rem;
+                width: 45%;
+            }
+        }
+    }
+
+}

@@ -275,6 +275,11 @@ h3 {
   color: #472317;
 }
 
+h3 .selectedMatch {
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
 p,
 footer,
 li {
@@ -306,7 +311,7 @@ ul li {
   text-align: left;
 }
 
-.flexContainer li {
+.userNameInput li {
   font-family: "Raleway", sans-serif;
   font-size: 2rem;
   font-weight: 500;
@@ -319,8 +324,7 @@ ul li {
 
 input,
 .submit,
-.userNameInput,
-.memberNameInput {
+.userNameInput {
   font-family: "Raleway", sans-serif;
   font-size: 2rem;
   font-weight: 400;
@@ -335,10 +339,6 @@ input,
   border: 2px solid #FDECEF;
   border-radius: 2px;
   padding: 5px;
-}
-
-button.submit {
-  padding: 5px 30px;
 }
 
 footer a:hover,
@@ -379,19 +379,9 @@ header h1 {
   width: 50%;
 }
 
-.flexContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  margin-bottom: 50px;
-}
-
-.flexContainer .sectionForUser,
-.flexContainer .sectionForMember {
-  margin: 0 20px;
-  width: calc(50% - 40px);
+.sectionForUser {
+  width: calc(50%);
+  margin: 0 auto;
 }
 
 input[type="text"] {
@@ -407,13 +397,20 @@ input[type="submit"] {
   width: calc(25% - 13px);
 }
 
-.userNameInput,
-.memberNameInput {
+.userNameInput {
   min-height: 300px;
   background-color: #FDECEF;
   opacity: 0.8;
   border: 2px solid #FDECEF;
   margin: 20px 0;
+}
+
+.button {
+  margin-top: 50px;
+}
+
+.button .submit {
+  padding: 5px 30px;
 }
 
 main {
@@ -437,7 +434,7 @@ main .formSection .infoSection {
 
 main .formSection button {
   position: absolute;
-  bottom: 20px;
+  bottom: 10px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -613,4 +610,37 @@ footer a {
   left: 65%;
   -webkit-animation-delay: 4s,2.5s;
   animation-delay: 4s,2.5s;
+}
+
+@media (max-width: 768px) {
+  header {
+    background-attachment: scroll;
+  }
+  header h1 {
+    font-size: 5rem;
+    padding-left: 50px;
+  }
+  .infoSection h2 {
+    font-size: 4rem;
+  }
+  .infoSection p {
+    font-size: 1.8rem;
+  }
+  .infoSection ul {
+    padding: 50px 5px;
+  }
+  .infoSection ul li {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  main .sectionForUser {
+    width: 80%;
+  }
+  main .resultSection {
+    min-height: 500px;
+  }
+  main .resultSection h3 {
+    font-size: 4rem;
+    width: 45%;
+  }
 }

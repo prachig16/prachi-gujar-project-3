@@ -13,7 +13,12 @@ h2{
 h3{
     @include fontDef($fontDefault, 4.8rem, 400, 6.4rem, 1.1px);
     color: $resultColor;
+    .selectedMatch{
+        font-weight: 700;
+        text-transform: capitalize;
+    }
 }
+
 
 // BODY text styles....
 p,
@@ -40,7 +45,7 @@ ul{
 }
 
 // For the userInput to display in the list
-.flexContainer li{
+.userNameInput li{
     @include fontDef($secondaryFont, 2rem ,500 ,3.2rem ,1.1px);
     color: $secondaryColor;
     text-align: left;
@@ -50,8 +55,7 @@ ul{
 // FORM Typography styles.....
 input,
 .submit,
-.userNameInput,
-.memberNameInput{
+.userNameInput{  
     @include fontDef($secondaryFont, 2rem ,400 ,3.2rem ,1.1px);
     color: $secondaryColor;
 }
@@ -66,9 +70,7 @@ input,
     padding: 5px;
 }
 
-button.submit{
-    padding: 5px 30px;
-}
+
 
 // HOVER styles.........
 footer a:hover,

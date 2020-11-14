@@ -15,7 +15,6 @@
         <div class="wrapper">
             <h1>Secret Santa Selector</h1>
         </div>
-
         <!-- Referred to Safi's notes for snowflake animation and cssSnowflakes from github "https://pajasevi.github.io/CSSnowflakes/"" -->
         <div class="snowflakes" aria-hidden="true">
             <div class="snowflake">
@@ -57,7 +56,6 @@
         </div>
     </header>
 
-
     <main>
         <section class="formSection">
             <div class="wrapper">
@@ -65,65 +63,43 @@
                     <h2>About the Secret Santa</h2>
                     <p>Do not let the lockdown keep you from the joy of Christams! Let us help you to find your secret santa match without you having to leave the warmth of your home <i class="fas fa-snowflake"></i></p>
                     <ul>
-                        <li>Type your name in the first section below and click "Ok"!</li>
                         <li>Type names of your friends, one at time, in the next section and click "Ok"!</li>
-                        <li>Once you submit both fields, click on "Submit" and let us do the rest!</li>
+                        <li>Click on "Submit" and let us do the rest!</li>
                     </ul>
                 </div>
-                
-                <div class="flexContainer">
-                    <div class="sectionForUser">
-                        <form action="#" class="userForm">
-                            <label for="name" class="srOnly">Your Name</label>
-                            <input type="text" id="name" name="name" placeholder="Your Name">
-                        
-                            <input type="submit" class="submit" value="Ok">
-                        </form>
-                        <section class="userNameInput">
+                <div class="sectionForUser">
+                    <form action="#" class="userForm">
+                        <label for="userName" class="srOnly">Type your friend's name</label>
+                        <input type="text" id="userName" name="name" placeholder="Name">
+                    
+                        <input type="submit" class="submit" value="Ok">
+                    </form>
+                    <section class="userNameInput">
+                        <ul>
                             <!-- user Name will appear here after the input -->
-                            <!-- <ul>
-                                <li>Prahci</li>
-                                <li>Arjun</li>
-                                <li>Sayali</li>
-                            </ul> -->
-                        </section>
-                    </div>
-                    <div class="sectionForMember">
-                        <form action="#" class="userForm">
-                            <label for="name" class="srOnly">Your Name</label>
-                            <input type="text" id="name" name="name" placeholder="Friend's Name">
-                        
-                            <input type="submit" class="submit" value="Ok">
-                        </form>
-                        <section class="memberNameInput">
-                            <!-- Members' names will appear here after the input -->
-                            <!-- <ul>
-                                <li>Prahci</li>
-                                <li>Arjun</li>
-                                <li>Sayali</li>
-                                <li>Prahci</li>
-                            </ul> -->
-                        </section>
-                    </div>
+                            <!-- <li>Prahci</li>
+                            <li>Arjun</li>
+                            <li>Sayali</li> -->
+                        </ul>
+                    </section>
+                    <section class="button">
+                        <button type="button" class="submit">SUBMIT</button>
+                    </section>
                 </div>
-                <button type="button" class="submit">SUBMIT</button>
             </div>
         </section>
-        
         <section class="resultSection">
             <div class="wrapper resultContainer">
                 <!-- String will appear as a method from JS, string will look like below -->
-                <!-- <h3>`${userName}, your secret santa match is ${seclectedMember}`</h3> -->
+                <!-- <h3>`Your secret santa match is <span class="selectedMatch">${selectedMember}</span>`</h3> -->
             </div>
         </section>
     </main>
+
     <footer>
         <p class="wrapper"> Copyright <i class="far fa-copyright"></i> 2019 HackerYou | <a href="https://junocollege.com/">Created at Juno College of Technology</a>
         </p>
     </footer>
-    
-
-
 
     <!--Loading jQuery library and linking the script file  -->
     <script src='https://code.jquery.com/jquery-3.4.0.min.js' integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=' crossorigin='anonymous'></script>
