@@ -18,6 +18,8 @@
     .infoSection {
         h2{
             font-size: 4rem;
+            line-height: 2rem;
+            margin: 20px 0;
         }
         p{
             font-size: 1.8rem;
@@ -43,7 +45,7 @@
 
     main .resultSection h3{
         font-size: 3.5rem;
-        line-height: normal;
+        line-height: 2rem;
         width: 45%;
     }
 }
